@@ -1,0 +1,14 @@
+<h1>{{caption}}</h1>
+<img src={{src}} />
+<br>
+<a id="next" href="#">NEXT PUNCH!!!</a>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.js">  </script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    if ({{pictureid}} == 4) {
+      $("#next").attr("href", "/1")
+    } else {
+      $("#next").attr("href", "/" + ({{pictureid}} + 1))
+    }
+  })
+</script>
